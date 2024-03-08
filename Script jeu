@@ -1,0 +1,67 @@
+# Déclarez les personnages utilisés dans le jeu.
+
+define n = Character('Narrator', color ="#f20505")
+define v = Character('anna', color = "#0512ff")
+define t = Character('atlas', color = "#ff5005")
+define d = Character('Détective', color = "#e605ff")
+
+
+# Le jeu commence ici
+label start:
+    scene pont with dissolve
+    v "C'était une dure journée aujourd'hui, j'ai appris la mort d'un collègue au travail, c'était terrifiant à entendre.."
+    t "Je suis désolé pour ton collègue, j'espère que tes autres collègues ne seront pas aussi choqués après ce drame.."
+    v "Oui, j'en suis sûr, tout ira bien !"
+    
+    v "D'ailleurs, j'ai oublié de préciser quelque chose. Suite à l'incident qui s'est passé au travail, j'étais partis accompagner des collègues au café du coin pour boire un verre."
+    v "Le café était délicieux n'empêche ! "
+    t "J'en ai entendu parler à l'entreprise, à ce qu'il parait, il vient d'ouvrir il y'a quelques semaines."
+    
+    v "Cela est vrai, pourquoi pas goûter demain soir ?"
+    t "Je suis d'accord, cela me va !"
+    v "D'ailleurs, ton rendez-vous aujourd'hui à ton boulot, comment ça s'est passé ? Tu ne m'as rien raconté !"
+    
+    t "C'est vrai j'ai totalement oublié de te le dire, je me suis entretenu avec le patron de l'entreprise et on a discuté de mon potentiel poste au sein de leur entreprise."
+    v "Mais c'est génial ! Ça va te changer les idées et d'atmosphère de ton ancien boulot."
+    t "Ça c'est clair, je ne supportais plus l'affreuse routine de cet entreprise."
+    
+    n "C'est à ce moment que commence l'affaire.."
+   
+    v "Je ne me sens pas très bien..."
+    t "Qu'y'a-t-il ? As-tu mal quelque part ?"
+    v "Je ne sais pas...je crois avoir mal à la tête..."
+   
+    t "Je vais t'allonger sur le banc, je vais aller chercher de l'aide !!"
+    t "Est-ce que tu vas bien ? Ta peau a changé de couleur et tu craches du sang !"
+    t "AU SECOURS ! J'AI BESOIN D'AIDE ! Je dois aller vite voir le cabinet du détective au bout de la rue."
+   
+    n "Tandis que le protecteur aimé de la jeune fille part soudainement, le meurtrier n'hésite pas à laisser sa marque..."
+    
+    scene cabinet with dissolve
+    t "Bonsoir Mr l'inspecteur, j'ai besoin de votre aide. En-effet, mon amie s'est mal sentie et a commencé à cracher du sang !"
+    
+    d "A-t-elle pris quelque chose, une substance ?"
+    d "Ou bien même a-t-elle bu quelque chose qui aurait pu enclancher cette réaction ?"
+
+    t "Nous avons discuté avant de cela, de l'ouverture d'un café au coin de la rue, elle y est entrée avec des collègues du travail."
+ 
+    d "N'a-t-elle pas fait une réaction à cette boisson ?"
+  
+    t "Du moins à ce que je sache non, elle me paraissait normale, comme tous les jours."
+  
+    d "Vous m'aviez dit qu'elle crachait du sang, est-ce cela ?"
+
+    t "En-effet, je l'ai allongé sur un banc et c'est à ce moment qu'elle a commencé à cracher du sang."
+  
+    d "Je vois, vous m'aviez dit qu'elle a pris un café avec des collègues."
+    d "Et que soudainement, elle a eu mal à la tête et a commencé à cracher du sang."
+    d "Je dois voir le corps pour en tirer des conclusions, où étiez-vous à ce-moment là ?"
+
+    t "Nous nous baladions à côté du pont, sur l'avenue London V."
+
+    d "Bien, allons-y et vite ! Nous pourrons sûrement trouver des indices !"
+
+    scene pont with dissolve
+    d "Là ! Regardez, il y'a une carte de Tarot posé au sol"
+    d "Ramassons-là pour voir ce qu'elle signifie"
+   
