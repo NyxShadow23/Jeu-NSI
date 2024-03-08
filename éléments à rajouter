@@ -1,0 +1,40 @@
+# Ça va permettre de faire apparaître la carte et le positionner un peu plus loin dans le background
+screen carte:
+     imagebutton:
+         xpos 190
+         ypos 450
+         idle "carte tarot étoile"
+         at custom_zoom
+
+transform custom_zoom:
+    zoom 0.2
+
+# A mettre au tout début du script
+init python:
+    class Item:
+        def __init__(self, name, image):
+            self.name = name
+            self.image = image
+
+
+# Ça permettre d'afficher l'inventaire
+screen inventory:
+    hbox:
+        for i in inspecteur_inventory:
+            frame:
+                xpadding 10
+                ypadding 10
+                xmargin 10
+                ymargin 10
+                add i.image size(60,60)
+
+# C'est à mettre en-dessous du "label start" pour créer l'inventaire
+$ inspecteur_inventory = []
+
+# pour créer la carte
+$ carte = Item("carte", "carte tarot étoile.png")
+    
+    call screen carte
+
+label carte_recupere:
+    $ inspecteur_inventory.append(carte)
